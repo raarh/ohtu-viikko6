@@ -24,6 +24,10 @@ public class QueryBuilder {
         matcher = new Or(m);
         return this;
     }
+    public QueryBuilder noneOf(Matcher...m){
+        matcher = new Not(m);
+        return this;
+    }
     public QueryBuilder hasFewerThan(int value, String category){
         changeMatcher(new HasFewerThan(value,category));
         return this;
