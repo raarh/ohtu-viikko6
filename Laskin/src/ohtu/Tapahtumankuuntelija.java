@@ -45,7 +45,6 @@ public class Tapahtumankuuntelija implements ActionListener {
             edellinen.push(komento);
         }else {
             Komento peruttava = edellinen.pop();
-            System.out.println(peruttava.getClass().toString());
             peruttava.peru();
         }
 
