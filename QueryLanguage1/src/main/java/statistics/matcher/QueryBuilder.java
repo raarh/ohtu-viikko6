@@ -2,12 +2,12 @@ package statistics.matcher;
 
 
 /**
- *
+ *stash
  * @author arto
  */
 public class QueryBuilder {
     Matcher matcher;
-    
+    Matcher[] matchers;
     public QueryBuilder(){
         
     }
